@@ -13,15 +13,6 @@ import br.com.springaspect.core.business.Business;
 @ContextConfiguration(locations = "/applicationContext.xml")
 public class SpringAOPDemo {
 
-	/**
-	 * @param args
-	 */
-	// public static void main(String[] args) {
-	// ApplicationContext context = new ClassPathXmlApplicationContext("src/test/resource/applicationContext.xml");
-	// Business bc = context.getBean(Business.class);
-	// bc.doSomeOperation();
-	// }
-
 	@Autowired
 	@Qualifier("myBusinessClass")
 	Business bc;
